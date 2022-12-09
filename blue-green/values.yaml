@@ -14,7 +14,7 @@ service:
   port: 80
 
 ingress:
-  enabled: true
+  enabled: false
   ingressClass: k8s.io/ingress-nginx
   annotations: 
     # kubernetes.io/ingress.class: nginx
