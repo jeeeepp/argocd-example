@@ -1,2 +1,10 @@
 service:
   type: LoadBalancer
+redis:
+  auth:
+    enabled: false
+  architecture: standalone
+  master:
+    persistence:
+      enabled: true
+      size: 5Gi

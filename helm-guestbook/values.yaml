@@ -12,6 +12,15 @@ image:
 service:
   type: ClusterIP
   port: 80
+  
+redis:
+  auth:
+    enabled: false
+  architecture: standalone
+  master:
+    persistence:
+      enabled: true
+      size: 5Gi
 
 ingress:
   enabled: false
